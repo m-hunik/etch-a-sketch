@@ -14,3 +14,7 @@ for (let i = 0; i < 256; i++) {
 div.addEventListener("mouseover", () => {
   div.classList.add("cell-highlight");
 });
+
+div.addEventListener("mouseout", () => {
+  div.classList.remove("cell-highlight");
+});
