@@ -10,3 +10,7 @@ for (let i = 0; i < 256; i++) {
   cell.textContent = i + 1;
   div.appendChild(cell);
 }
+
+div.addEventListener("mouseover", () => {
+  div.classList.add("cell-highlight");
+});
