@@ -11,10 +11,13 @@ for (let i = 0; i < 256; i++) {
   div.appendChild(cell);
 }
 
-div.addEventListener("mouseover", () => {
-  div.classList.add("cell-highlight");
+const cells = document.querySelectorAll(".container .cell");
+cells.forEach((cell) => {
+  cell.addEventListener("mouseover", () => {
+    cell.classList.add("cell-highlight");
+  });
 });
 
-div.addEventListener("mouseout", () => {
-  div.classList.remove("cell-highlight");
-});
+// cell.addEventListener("mouseout", () => {
+//   cell.classList.remove("cell-highlight");
+// });
